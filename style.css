@@ -220,7 +220,7 @@ header{
  }
 
  @media screen and (min-width: 800px){
-  .css{
+  .middle-container-top{
     flex-direction: row;
   }
 }
@@ -289,7 +289,7 @@ header{
  }
 
  @media screen and (min-width: 800px){
-  .javascript{
+  .github{
     width: 20rem;
     height: 12rem;
   }
