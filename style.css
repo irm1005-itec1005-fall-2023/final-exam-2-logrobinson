@@ -328,11 +328,13 @@ header {
   border-radius: 1rem;
   justify-content: center;
   align-items: center;
+  margin-bottom:1rem;
 }
 
 @media screen and (min-width: 800px) {
   .amy-img {
     margin-right: 2rem;
+    margin-bottom: 0rem;
   }
 }
 
