@@ -78,8 +78,15 @@ header{
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 800px){
+  header{
+    margin-left:5rem;
+    margin-right:5rem;
+  }
 }
 
 
@@ -112,6 +119,7 @@ header{
   margin-bottom: 10rem;
   margin-left: 5rem;
   margin-right: 5rem;
+  text-align: center;
  }
 
  .page-intro-title{
@@ -125,71 +133,115 @@ header{
  .boxes{
   margin-bottom: 10rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  }
+
+ @media screen and (min-width: 800px){
+  .boxes{
+    flex-direction: row;
+  }
+}
 
  .left-container{
   display: flex;
   flex-direction: column;
   background-color: #cdb4db;
-  width: 20rem;
-  height: 25rem;
-  justify-content: flex-end;
-  align-items: start;
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem;
+  width: 18rem;
  }
+
+ @media screen and (min-width: 800px){
+  .left-container{
+    width: 20rem;
+    height: 25rem;
+    justify-content: flex-end;
+    align-items: start;
+  }
+}
 
  .middle-container{
   display: flex;
   flex-direction: column;
-  width: 20rem;
-  height: 25rem;
  }
+
+ @media screen and (min-width: 800px){
+  .left-container{
+    width: 20rem;
+    height: 25rem;
+  }
+}
 
  .ui-ux{
   display:flex;
   background-color: rgb(144, 229, 229);
   padding: 1rem;
   border-radius: 1rem;
-  height: 12rem;
-  width: 9.5rem;
+  width:18rem;
   align-items: end;
   justify-content: start;
  }
+
+ @media screen and (min-width: 800px){
+  .ui-ux{
+    height: 12rem;
+    width: 9.5rem;
+  }
+}
 
  .css{
   display:flex;
   background-color: rgb(191, 102, 178);
   padding: 1rem;
   border-radius: 1rem;
-  height: 12rem;
-  width: 9.5rem;
-  margin-left:1rem;
+  width: 18rem;
+  margin-top: 1rem;
   align-items: end;
   justify-content: start;
  }
 
+ @media screen and (min-width: 800px){
+  .css{
+    height: 12rem;
+    width: 9.5rem;
+    margin-left:1rem;
+    margin-top: 0rem;
+  }
+}
+
  .middle-container-top{
   display: flex;
-  flex-direction:row;
-  align-items: start;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
  }
+
+ @media screen and (min-width: 800px){
+  .css{
+    flex-direction: row;
+  }
+}
 
  .html{
   display: flex;
   background-color: #a26bc2;
   margin-top: 1rem;
-  width: 20rem;
-  height: 12rem;
+  width: 18rem;
   border-radius: 1rem;
   padding: 1rem;
   align-items: end;
   justify-content: start;
  }
+
+ @media screen and (min-width: 800px){
+  .html{
+    width: 20rem;
+    height: 12rem;
+  }
+}
 
 
  .right-container{
@@ -198,39 +250,67 @@ header{
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  margin-left:1rem;
+  margin-top:1rem;
  }
+
+ @media screen and (min-width: 800px){
+  .right-container{
+    margin-left:1rem;
+    margin-top: 0rem;
+  }
+}
 
  .javascript{
   display: flex;
   background-color: #6b71c2;
-  width: 20rem;
-  height: 12rem;
+  width: 18rem;
   border-radius: 1rem;
   padding: 1rem;
   align-items: end;
   justify-content: start;
  }
 
+ @media screen and (min-width: 800px){
+  .javascript{
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
  .github{
     display: flex;
     background-color: #6bb1c2;
     margin-top: 1rem;
-    width: 20rem;
-    height: 12rem;
+    width: 18rem;
     border-radius: 1rem;
     padding: 1rem;
     align-items: end;
     justify-content: start;
  }
 
+ @media screen and (min-width: 800px){
+  .javascript{
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
 .amy{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+ 
+}
+
+@media screen and (min-width: 800px){
+  .amy{
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
  .amy-img{
@@ -238,8 +318,15 @@ header{
   height: 30rem;
   object-fit: cover;
   border-radius: 1rem;
-  margin-right:2rem;
+  justify-content: center;
+  align-items: center;
  }
+
+ @media screen and (min-width: 800px){
+  .amy-img{
+    margin-right:2rem;
+  }
+}
 
  .amy-about{
   display: flex;
@@ -283,11 +370,19 @@ header{
  .my-work-containers{
   display: flex;
   flex-direction: column;
-  margin-left:5rem;
-  margin-right:5rem;
+  margin-left:1rem;
+  margin-right:1rem;
   justify-content: center;
   align-items: center;
  }
+
+ @media screen and (min-width: 800px){
+  .my-work-containers{
+    margin-left:5rem;
+    margin-right:5rem;
+  }
+}
+
 
 .tutorial-03{
   display: flex;
@@ -347,13 +442,25 @@ header{
 
  .row-1{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
  }
+
+ @media screen and (min-width: 800px){
+  .row-1{
+    flex-direction: row;
+  }
+}
 
  .row-2{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
  }
+
+ @media screen and (min-width: 800px){
+  .row-2{
+    flex-direction: row;
+  }
+}
 
 .featured-languages{
   display: flex;
@@ -417,16 +524,6 @@ header{
   margin-left: 1rem;
  }
 
- footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  border-top: solid 0.1rem #797979;
-}
 
 
 .contact{
@@ -436,11 +533,18 @@ header{
   border-radius: 1rem;
   align-items: left;
   justify-content: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
   padding:2rem;
+}
+
+@media screen and (min-width: 800px){
+  .contact{
+    margin-left: 5rem;
+  margin-right: 5rem;
+  }
 }
 
 .book-a-call{
@@ -466,6 +570,24 @@ header{
   color: #a26bc2;
 }
 
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: solid 0.1rem #797979;
+}
+
+@media screen and (min-width: 800px){
+  .footer{
+    margin-left:5rem;
+    margin-right:5rem;
+  }
+}
+
  .footer-logo{
   max-width: 4rem;
   padding: 1rem;
@@ -473,4 +595,11 @@ header{
 
  .copyright{
   color:#797979;
+  font-size: 0.8rem;
  }
+
+ @media screen and (min-width: 800px){
+  .copyright{
+    font-size: 1rem;
+  }
+}
